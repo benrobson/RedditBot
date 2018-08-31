@@ -18,6 +18,7 @@ client.on('ready', () => {
     client.user.setActivity(info);
     console.log(`[Console] Activity set to (${info})`);
   };
+  setInterval(setActivity, 120000);
 
   setInterval (function () {
     const channel = client.channels.find('name', 'memes');
@@ -27,6 +28,8 @@ client.on('ready', () => {
       .setTitle(data.title[0])
       .setImage(data.url[0])
       channel.send(embed).catch(console.error);
+
+      console.log('Meme has been posted.')
     })}, 600000);
 });
 
