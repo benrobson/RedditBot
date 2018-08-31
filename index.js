@@ -37,7 +37,7 @@ client.on('guildCreate', (guild) => {
 
   const embed = new Discord.RichEmbed()
   .setTitle('Cheers for the invite!')
-  .setImage('https://i.imgur.com/hWonxMb.png')
+  .setThumbnail('https://i.imgur.com/hWonxMb.png')
   .setColor('#ffa500')
   .setDescription(`Thanks for inviting me to your Discord guild. I will be your meme provider. I will be posting memes in the #memes channel every 10 minutes. If you have not created a #memes channel, please do so.\n\nMy Developer is shadowolf#9212`)
   guild.channels.find(`name`,`general`).send(embed);
