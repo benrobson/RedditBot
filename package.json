@@ -1,0 +1,23 @@
+{
+  "name": "redditbot",
+  "version": "1.0.0",
+  "description": "A Discord bot coded with JavaScript.",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadowolfyt/RedditBot.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shadowolfyt/RedditBot/issues"
+  },
+  "homepage": "https://github.com/shadowolfyt/RedditBot#readme",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "memejs": "^1.0.7"
+  }
+}
