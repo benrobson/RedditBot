@@ -12,7 +12,7 @@ client.on('ready', () => {
   client.user.setActivity('Just a meme lol');
 
   function setActivity() {
-    const Gameinfo = ['Source: http://bit.ly/rodneybotsource', 'Developer: shadowolf#9212', 'Discord: http://bit.ly/mancavediscord', 'Invite: http://bit.ly/inviterodney', `Running on ${client.guilds.size} ${pluralnonpluralservers}`, `Running for ${client.users.size} ${pluralnonpluralusers}`];
+    const Gameinfo = ['Source: http://bit.ly/redditbotsource', 'Developer: shadowolf#9212', 'Discord: http://bit.ly/mancavediscord', 'Invite: http://bit.ly/inviterodney', `Running on ${client.guilds.size} ${pluralnonpluralservers}`, `Running for ${client.users.size} ${pluralnonpluralusers}`];
     var info = Gameinfo[Math.floor(Math.random() * Gameinfo.length)];
 
     client.user.setActivity(info);
