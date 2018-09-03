@@ -1,6 +1,7 @@
 <p align="center">
   <img height="250" src="https://i.imgur.com/hWonxMb.png">
 </p>
+
 # RedditBot
 
 A Discord bot that chucks up random posts from selected subreddits.
