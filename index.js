@@ -21,7 +21,7 @@ client.on('ready', () => {
   setInterval(setActivity, 120000);
 
   setInterval (function () {
-    const channel = client.channels.find('name', 'memes');
+    const channel = client.channels.find(c => c.name === 'memes').send(embed);
 
     meme(function(data) {
       const embed = new Discord.RichEmbed()
@@ -45,7 +45,7 @@ client.on('guildCreate', (guild) => {
   .setThumbnail('https://i.imgur.com/hWonxMb.png')
   .setColor('#ffa500')
   .setDescription(`Thanks for inviting me to your Discord guild. I will be your meme provider. I will be posting memes in the #memes channel every 10 minutes.\nIf I haven't created a #memes channel, please do so.\n\nMy Developer is shadowolf#9212`)
-  guild.channels.find(`name`,`general`).send(embed);
+  guild.channels.find(c => c.name === 'general').send(embed);
 
   guild.createChannel(`memes`, `text`).catch(console.error);
 });
@@ -88,7 +88,7 @@ client.on('message', (message) => {
 
       const guildList = client.guilds.array();
       try {
-        guildList.forEach(guild => guild.channels.find("name", "memes").send({embed}));
+        guildList.forEach(guild => guild.channels.find(c => c.name === 'memes').send(embed);
       } catch (err) {
         console.log("Could not send meme blast\n" + err);
       }
