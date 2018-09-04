@@ -21,7 +21,7 @@ client.on('ready', () => {
   setInterval(setActivity, 120000);
 
   setInterval (function () {
-    const channel = client.channels.find(c => c.name === 'memes').send(embed);
+    const channel = client.channels.find(c => c.name === 'memes').send(embed));
 
     meme(function(data) {
       const embed = new Discord.RichEmbed()
