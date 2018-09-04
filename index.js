@@ -21,7 +21,7 @@ client.on('ready', () => {
   setInterval(setActivity, 120000);
 
   setInterval (function () {
-    const channel = client.channels.find(c => c.name === 'memes').send(embed));
+    const channel = client.channels.find(c => c.name === 'memes');
 
     meme(function(data) {
       const embed = new Discord.RichEmbed()
@@ -88,7 +88,7 @@ client.on('message', (message) => {
 
       const guildList = client.guilds.array();
       try {
-        guildList.forEach(guild => guild.channels.find(c => c.name === 'memes').send(embed);
+        guildList.forEach(guild => guild.channels.find(c => c.name === 'memes').send(embed));
       } catch (err) {
         console.log("Could not send meme blast\n" + err);
       }
